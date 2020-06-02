@@ -1,0 +1,33 @@
+body{
+    margin: 0;
+}
+
+.icon-bar{
+    width: 100%;
+    background-color: #ddd;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.icon-bar a{
+    color: black;
+    font-size: 2rem;
+    padding: 12px;
+    width: 15%;
+    text-align: center;
+    transition: all 0.2s ease;
+    max-width: 160px;
+}
+
+#home {
+    color: white;
+    background-color: #1DACD6;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.icon-bar a:hover {
+    background-color: #eee;
+  }
