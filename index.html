@@ -10,15 +10,23 @@
 </head>
 <body>
     <div class="icon-bar">
-        <a href="#" id="home"><i class="fa fa-home" aria-hidden="true"></i></a>
-        <a href="#"><i class="fa fa-file-text" aria-hidden="true"></i>
+        <a href="#" id="home" onmouseover="homeTrans(1)" onmouseout="homeTrans(0)"><i class="fa fa-home" aria-hidden="true"></i></a>
+        <a href="#" id="product" onmouseover="productTrans(1)" onmouseout="productTrans(0)"><i class = "fa fa-file-text" aria-hidden="true"></i>
         </a>
-        <a href="#"><i class="fa fa-map" aria-hidden="true"></i>
+        <a href="#" id="map" onmouseover="mapTrans(1)" onmouseout="mapTrans(0)"><i class="fa fa-map" aria-hidden="true"></i>
         </a>
-        <a href="#"><i class="fa fa-envelope" aria-hidden="true"></i>
+        <a href="#" id="contact" onmouseover="contactTrans(1)" onmouseout="contactTrans(0)"><i class="fa fa-envelope" aria-hidden="true"></i>
         </a>
-        <a href="#"><i class="fa fa-question-circle" aria-hidden="true"></i>
+        <a href="#" id="help" onmouseover="helpTrans(1)" onmouseout="helpTrans(0)"><i class="fa fa-question-circle" aria-hidden="true"></i>
         </a>
     </div>
+    <div class="tip-bar">
+        <p id="active">Home</p>
+        <p class="tool-tip product-tip">Products</p>
+        <p class="tool-tip map-tip">Locations</p>
+        <p class="tool-tip contact-tip">Contact</p>
+        <p class="tool-tip help-tip">Help</p>
+    </div>
 </body>
+<script src="script.js"></script>
 </html>

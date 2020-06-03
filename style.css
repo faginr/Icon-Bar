@@ -1,33 +1,71 @@
-body{
-    margin: 0;
+body {
+  margin: 0;
 }
 
-.icon-bar{
-    width: 100%;
-    background-color: #ddd;
-    display: flex;
-    justify-content: flex-end;
-    align-items: center;
+.icon-bar {
+  width: 100%;
+  background-color: #ddd;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
 }
 
-.icon-bar a{
-    color: black;
-    font-size: 2rem;
-    padding: 12px;
-    width: 15%;
-    text-align: center;
-    transition: all 0.2s ease;
-    max-width: 160px;
+.tip-bar {
+  width: 100%;
+  background-color: #ffffff;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+.icon-bar a {
+  color: black;
+  font-size: 2rem;
+  padding: 12px;
+  width: 15%;
+  text-align: center;
+  transition: all 0.2s ease;
+  max-width: 160px;
+}
+
+.tool-tip {
+  text-align: center;
+  padding: 4px 12px;
+  width: 15%;
+  max-width: 160px;
 }
 
 #home {
-    color: white;
-    background-color: #1DACD6;
-    position: absolute;
-    top: 0;
-    left: 0;
+  color: white;
+  background-color: #1dacd6;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+#active {
+  position: absolute;
+  text-align: center;
+  padding: 4px 12px;
+  width: 15%;
+  max-width: 160px;
+  top: 60px;
+  left: 0;
+}
+
+#active,
+.product-tip,
+.map-tip,
+.contact-tip,
+.help-tip {
+  color: whitesmoke;
+  background-color: rgba(21, 21, 21, .8);
+  box-shadow: 1px 1px 1px solid rgba(ee, ee, ee, .2);
+  border-radius: 10px;
+  opacity: 0;
+  transition: opacity .4s;
 }
 
 .icon-bar a:hover {
-    background-color: #eee;
-  }
+  background-color: #eee;
+}
